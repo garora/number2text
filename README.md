@@ -2,7 +2,7 @@
 Pronounced as ```number-to-text```. Provides the facility to convert number to text (currently supports only Indian style for number to text).
 
 
-## How to installation?
+## How to install?
 
 ```shell
   npm install number2text
@@ -32,7 +32,7 @@ Currently ```number2text``` is in initial release. We're trying to make it more 
 
 Just need to take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
 
-#Getting pre-release installation
+# Starting with pre-release installation
 
 ```shell
   npm install git://github.com/garora/number2text.git
