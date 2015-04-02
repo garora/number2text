@@ -1,0 +1,28 @@
+{
+  "name": "number2text",
+  "version": "0.1.0",
+  "description": "A small utility converts Number to Text (supports to Indian numbers only with initial release).",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garora/number2text.git"
+  },
+  "keywords": [
+    "number",
+    "text"
+  ],
+  "author": "Gaurav Kumar Arora <g_arora@hotmail.com> (http://gaurav-arora.com/)",
+  "license": "MIT",
+  "url": "https://github.com/garora/number2text/blob/master/LICENSE",
+  "bugs": {
+    "url": "https://github.com/garora/number2text/issues"
+  },
+  "homepage": "https://github.com/garora/number2text",
+  "devDependencies": {
+    "mocha": "^2.2.1",
+    "chai": "^2.2.0"
+  }
+}
