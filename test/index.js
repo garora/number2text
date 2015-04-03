@@ -55,27 +55,27 @@ var should = require('chai').should(),
     number2text(30).should.equal('Thirty');
   });
 
-  it('Converts 40 to One', function() {
-    number2text(40).should.equal('Forty');
+  it('Converts 40 to Fourty', function() {
+    number2text(40).should.equal('Fourty');
   });
 
-  it('Converts 50 to One', function() {
+  it('Converts 50 to Fifty', function() {
     number2text(50).should.equal('Fifty');
   });
 
-  it('Converts 60 to One', function() {
+  it('Converts 60 to Sixty', function() {
     number2text(60).should.equal('Sixty');
   });
 
-  it('Converts 70 to One', function() {
+  it('Converts 70 to Seventy', function() {
     number2text(70).should.equal('Seventy');
   });
 
-  it('Converts 80 to One', function() {
+  it('Converts 80 to Eighty', function() {
     number2text(80).should.equal('Eighty');
   });
 
-  it('Converts 9 to One', function() {
+  it('Converts 9 to Ninety', function() {
     number2text(90).should.equal('Ninety');
   });
 });
