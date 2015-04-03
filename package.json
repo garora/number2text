@@ -1,10 +1,12 @@
 {
   "name": "number2text",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Provides the facility to convert number to text (currently supports only Indian style for number to text).",
   "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "test": "./node_modules/.bin/mocha",
+    "test-cov": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coveralls/coverage --report lcovonly -- -R spec && cat ./reports/coveralls/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coveralls"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,18 @@
     "text"
   ],
   "author": "Gaurav Kumar Arora <g_arora@hotmail.com> (http://gaurav-arora.com/)",
-  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Gaurav Kumar Arora",
+      "email": "g_arora@hotmail.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "url": "https://github.com/garora/number2text/blob/master/LICENSE",
   "bugs": {
     "url": "https://github.com/garora/number2text/issues"
@@ -23,6 +36,10 @@
   "homepage": "https://github.com/garora/number2text",
   "devDependencies": {
     "mocha": "^2.2.1",
-    "chai": "^2.2.0"
+    "chai": "^2.2.0",
+    "jshint": "^2.6.3",
+    "jshint-stylish": "^1.0.1",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.13"
   }
 }
