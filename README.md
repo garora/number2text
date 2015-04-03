@@ -46,3 +46,4 @@ MIT
 ## Release history
 
 * 0.0.0 Initial release
+* 0.1.0 Initial release - Fixed few issues related to build
