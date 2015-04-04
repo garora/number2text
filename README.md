@@ -1,7 +1,10 @@
 Number to Text
 ===
 [![Build Status](https://travis-ci.org/garora/number2text.svg?branch=master)](https://travis-ci.org/garora/number2text)   [![Coverage Status](https://coveralls.io/repos/garora/number2text/badge.svg)](https://coveralls.io/r/garora/number2text)
-> Pronounced as ```number-to-text```. Provides the facility to convert number to text (currently supports only Indian style for number to text).
+> Provides the facility to convert number to text. Currently it supports:
+
+* Numbers only (no currency support available) 
+* Indian style for number to text
 
 
 ## How to install?
@@ -57,3 +60,4 @@ Currently ```number2text``` is in initial release. We're trying to make it more 
 * 0.0.0 Initial release
 * 0.1.0 Initial release - Fixed few issues related to build
 * 0.1.1 Few fixes
+* 0.1.11 Typos
