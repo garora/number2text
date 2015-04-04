@@ -51,7 +51,7 @@ var should = require('chai').should(),
     number2text(20).should.equal('Twenty');
   });
 
-  it('Converts 3 to Three', function() {
+  it('Converts 30 to Three', function() {
     number2text(30).should.equal('Thirty');
   });
 
@@ -75,7 +75,7 @@ var should = require('chai').should(),
     number2text(80).should.equal('Eighty');
   });
 
-  it('Converts 9 to Ninety', function() {
+  it('Converts 90 to Ninety', function() {
     number2text(90).should.equal('Ninety');
   });
 });
