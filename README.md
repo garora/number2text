@@ -1,5 +1,7 @@
-# number2text   [![Build Status](https://travis-ci.org/garora/number2text.svg?branch=master)](https://travis-ci.org/garora/number2text)   [![Coverage Status](https://coveralls.io/repos/garora/number2text/badge.svg)](https://coveralls.io/r/garora/number2text)
-Pronounced as ```number-to-text```. Provides the facility to convert number to text (currently supports only Indian style for number to text).
+Number to Text
+===
+[![Build Status](https://travis-ci.org/garora/number2text.svg?branch=master)](https://travis-ci.org/garora/number2text)   [![Coverage Status](https://coveralls.io/repos/garora/number2text/badge.svg)](https://coveralls.io/r/garora/number2text)
+> Pronounced as ```number-to-text```. Provides the facility to convert number to text (currently supports only Indian style for number to text).
 
 
 ## How to install?
