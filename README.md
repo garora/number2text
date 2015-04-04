@@ -24,10 +24,6 @@ Pronounced as ```number-to-text```. Provides the facility to convert number to t
    npm test
 ```
 
-## Release notes
-
-Currently ```number2text``` is in initial release. We're trying to make it more stable. Currently, it supports Indian standard to read numbers as words. Check for more details: [Change log](https://github.com/garora/number2text/blob/master/Changelog.md)
-
 ## Contribution
 
 Just need to take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
@@ -49,7 +45,13 @@ Just need to take care to maintain the existing coding style. Add unit tests for
 
 MIT
 
+## Release notes
+
+Currently ```number2text``` is in initial release. We're trying to make it more stable. Currently, it supports Indian standard to read numbers as words. Check for more details: [Change log](https://github.com/garora/number2text/blob/master/Changelog.md)
+
+
 ## Release history
 
 * 0.0.0 Initial release
 * 0.1.0 Initial release - Fixed few issues related to build
+* 0.1.1 Few fixes

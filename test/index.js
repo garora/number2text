@@ -87,7 +87,7 @@ describe('Negative Tests', function() {
   });
 
  it('Test for decimal', function() {
-    number2text('10.10').should.equal('Currently support for decimal is unavailable.');
+    number2text('10.10').should.equal('Currently, currency/decimal support is unavailable.');
   });
 
 it('Out of range - Lower', function() {
@@ -98,4 +98,11 @@ it('Out of range - Higher', function() {
     number2text(1000000000).should.equal('Please enter number between 0 - 999999999.');
   });
 
+});
+
+describe('Functional Tests', function() {
+  
+  it('Converts 9001 to Nine Thousand One', function() {
+    number2text(9001).should.equal('Nine Thousand One');
+  });
 });
