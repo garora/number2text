@@ -115,4 +115,33 @@ describe('Functional Tests', function() {
     number2text(999999999).should.equal('Ninety-Nine Crore Ninety-Nine Lakh Ninety-Nine Thousand Nine Hundred Ninety-Nine');
   });
 
+	it('Converts 10000000 to One Crore', function() {
+    number2text(10000000).should.equal('One Crore');
+  });
+
+	it('Converts 100000000 to Ten Crore', function() {
+    number2text(100000000).should.equal('Ten Crore');
+  });
+
+	it('Converts 1000000 to One Lakh', function() {
+    number2text(100000).should.equal('One Lakh');
+  });
+
+	it('Converts 1000000 to Ten Lakh', function() {
+    number2text(1000000).should.equal('Ten Lakh');
+  });
+
+	it('Converts 10000 to Ten Thousand', function() {
+    number2text(10000).should.equal('Ten Thousand');
+  });
+	it('Converts 1000 to One Thousand', function() {
+    number2text(1000).should.equal('One Thousand');
+  });
+
+	it('Converts 100 to One Hundred', function() {
+    number2text(100).should.equal('One Hundred');
+  });
+
+
+
 });
