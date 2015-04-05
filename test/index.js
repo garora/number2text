@@ -82,8 +82,13 @@ var should = require('chai').should(),
 
 describe('Negative Tests', function() {
   
-  it('Test for invalid number', function() {
-    number2text('N').should.equal('Invalid number.');
+  it('Test for invalid number. N: Invalid number', function() {
+    number2text('Hello').should.equal('Invalid number.');
+  });
+
+  it('Test for invalid number. S: in a string', function() {
+  	var num = 's';
+    number2text(num).should.equal('Invalid number.');
   });
 
  it('Test for decimal', function() {
@@ -105,4 +110,9 @@ describe('Functional Tests', function() {
   it('Converts 9001 to Nine Thousand One', function() {
     number2text(9001).should.equal('Nine Thousand One');
   });
+	
+	it('Converts 999999999 to Ninety-Nine Crore Ninety-Nine Lakh Ninety-Nine Thousand Nine Hundred Ninety-Nine', function() {
+    number2text(999999999).should.equal('Ninety-Nine Crore Ninety-Nine Lakh Ninety-Nine Thousand Nine Hundred Ninety-Nine');
+  });
+
 });
