@@ -145,7 +145,17 @@ describe('Functional Tests', function() {
 	it('Converts 0 to Zero', function() {
     number2text(0).should.equal('Zero');
   });
+});
 
 
+describe('Conversion Language Tests', function() {
+	
+	it('Default conversion tyep is Indian (100000 to One Lakh)', function() {
+	    number2text(100000).should.equal('One Lakh');
+	  });
+
+	it('English conversion for (1000000 to One Lakh)', function() {
+	    number2text(10000000,'english').should.equal('One Lakh');
+	  });
 
 });

@@ -8,5 +8,5 @@
 var numberToText = require('./lib/numberToText');
 
 module.exports = function (num) {
-  return numberToText(num);
+  return numberToText(num,'indian');
 };
