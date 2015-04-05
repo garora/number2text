@@ -1,6 +1,6 @@
 {
   "name": "number2text",
-  "version": "0.1.11",
+  "version": "1.0.0",
   "description": "Provides the facility to convert number to text (currently supports only Indian style for number to text).",
   "main": "index.js",
   "scripts": {

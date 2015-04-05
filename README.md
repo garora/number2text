@@ -5,6 +5,7 @@ Number to Text
 
 * Numbers only (no currency support available) 
 * Indian style for number to text
+* English style for number to text
 
 
 ## How to install?
@@ -18,9 +19,25 @@ Number to Text
 ```js
   var numberToText = require('number2text');
       
-  var text = numberToText(100);
+  var text = numberToText(100); //it converts to default type i.e. Indian
 
   console.log('Converts 100 to ', text); //Converts 100 to One Hundred
+```
+
+```js
+  var numberToText = require('number2text');
+      
+  var text = numberToText(100,'Indian');
+
+  console.log('Converts 100 to ', text); //Converts 100 to One Hundred
+```
+
+```js
+  var numberToText = require('number2text');
+      
+  var text = numberToText(1000000,'English');
+
+  console.log('Converts 1000000 to ', text); //Converts 1000000 to One Million
 ```
 
 ## Executing tests
@@ -61,3 +78,4 @@ Currently ```number2text``` is in initial release. We're trying to make it more 
 * 0.1.0 Initial release - Fixed few issues related to build
 * 0.1.1 Few fixes
 * 0.1.11 Typos
+* 1.0.0 New feature

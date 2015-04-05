@@ -1,5 +1,10 @@
+## 1.0.0 / March 06, 2015
+  * Added functional and negative tests
+  * Corrected logic to make performance
+  * Added the ability so, it converts in English system of Million, Billion, Trillion etc.
+
 ## 0.1.11 / March 04, 2015
-  * Beaitify some stuffs
+  * Beautify some stuffs
   
   
 ## 0.1.1 / March 04, 2015

@@ -7,6 +7,6 @@
 
 var numberToText = require('./lib/numberToText');
 
-module.exports = function (num) {
-  return numberToText(num,'indian');
+module.exports = function (num,language) {
+  return numberToText(num,language);
 };
