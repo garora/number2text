@@ -142,6 +142,10 @@ describe('Functional Tests', function() {
     number2text(100).should.equal('One Hundred');
   });
 
+	it('Converts 0 to Zero', function() {
+    number2text(0).should.equal('Zero');
+  });
+
 
 
 });
