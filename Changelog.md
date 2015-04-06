@@ -1,3 +1,7 @@
+## 1.0.1 / March 06, 2015
+  * Added support for large number conversion
+  
+
 ## 1.0.0 / March 06, 2015
   * Added functional and negative tests
   * Corrected logic to make performance
