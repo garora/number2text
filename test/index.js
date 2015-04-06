@@ -213,5 +213,8 @@ describe('Extra large numbers', function() {
 
 	    number2text(1000000000000000000).should.equal('Ten Thousand Crore Crore'); //High number discrepency in Indian type
 	    number2text(1000000000000000000,'English').should.equal('One Quintillion');
+
+	    number2text(10000000000000000000).should.equal('One Lakh Crore Crore'); //High number discrepency in Indian type
+	    number2text(10000000000000000000,'English').should.equal('Ten Quintillion');
 	  });
 });
