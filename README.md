@@ -18,27 +18,48 @@ Number to Text
 
 ```js
   var numberToText = require('number2text');
-      
-  var text = numberToText(100); //it converts to default type i.e. Indian
+ ```
 
-  console.log('Converts 100 to ', text); //Converts 100 to One Hundred
+```js
+     
+  var textDefault = numberToText(100); //it converts to default type i.e. Indian
+
+  console.log('Converts 100 to ', textDefault); //Converts 100 to One Hundred
 ```
 
 ```js
-  var numberToText = require('number2text');
-      
-  var text = numberToText(100,'Indian');
+       
+  var textIndian = numberToText(100,'Indian');
 
-  console.log('Converts 100 to ', text); //Converts 100 to One Hundred
+  console.log('Converts 100 to ', textIndian); //Converts 100 to One Hundred
 ```
 
 ```js
-  var numberToText = require('number2text');
-      
-  var text = numberToText(1000000,'English');
+       
+  var textEnglish = numberToText(1000000,'English');
 
-  console.log('Converts 1000000 to ', text); //Converts 1000000 to One Million
+  console.log('Converts 1000000 to ', textEnglish); //Converts 1000000 to One Million
 ```
+
+```js
+       
+  //Large values
+
+  var textIndian = numberToText(1000000000000);
+  var textEnglish = numberToText(1000000000000,'English');
+
+  console.log('Converts 1000000000000 to ', textIndian); //Converts 1000000000000 to One Lakh Crore
+  console.log('Converts 1000000000000 to ', textEnglish); //Converts 1000000000000 to One Trillion
+```
+
+```js
+       
+  //For types other than Indian, English
+
+  var text = numberToText(100,"Frensh");
+  
+  console.log('Retuns message: ', text); //Return message: Support for language: french is not available. Available languages are: indian,english
+ ```
 
 ## Executing tests
 
@@ -79,3 +100,4 @@ Currently ```number2text``` is in initial release. We're trying to make it more 
 * 0.1.1 Few fixes
 * 0.1.11 Typos
 * 1.0.0 New feature
+* 1.0.1 Added large number support
