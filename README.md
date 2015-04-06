@@ -24,14 +24,14 @@ Number to Text
      
   var textDefault = numberToText(100); //it converts to default type i.e. Indian
 
-  console.log('Converts 100 to ', textDefault); //Converts 100 to One Hundred
+  console.log('Converts 1000000 to ', textDefault); //Converts 1000000 to Ten Lakh
 ```
 
 ```js
        
-  var textIndian = numberToText(100,'Indian');
+  var textIndian = numberToText(1000000,'Indian');
 
-  console.log('Converts 100 to ', textIndian); //Converts 100 to One Hundred
+  console.log('Converts 1000000 to ', textIndian); //Converts 1000000 to Ten Lakh
 ```
 
 ```js
