@@ -1,6 +1,6 @@
 {
   "name": "number2text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides the facility to convert number to text (currently supports only Indian style for number to text).",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,10 @@
   },
   "keywords": [
     "number",
-    "text"
+    "type",
+    "text",
+    "Indian",
+    "English"
   ],
   "author": "Gaurav Kumar Arora <g_arora@hotmail.com> (http://gaurav-arora.com/)",
   "contributors": [
