@@ -117,11 +117,11 @@ describe('Negative Tests', function() {
   });
 
 it('Out of range - Lower', function() {
-    number2text(-1).should.equal('Please enter number between 0 - 999999999.');
-    number2text(-1,'english').should.equal('Please enter number between 0 - 999999999.');
+    number2text(-1).should.equal('Please enter +ve number only.');
+    number2text(-1,'english').should.equal('Please enter +ve number only.');
   });
 
-it('Out of range - Higher', function() {
+xit('Out of range - Higher', function() {
     number2text(1000000000).should.equal('Please enter number between 0 - 999999999.');
     number2text(1000000000,'english').should.equal('Please enter number between 0 - 999999999.');
   });
@@ -139,6 +139,7 @@ describe('Functional Tests', function() {
     number2text(999999999).should.equal('Ninety-Nine Crore Ninety-Nine Lakh Ninety-Nine Thousand Nine Hundred Ninety-Nine');
     number2text(999999999,'english').should.equal('Nine Hundred Ninety-Nine Million Nine Hundred Ninety-Nine Thousand Nine Hundred Ninety-Nine');
   });
+
 
 	it('Converts 10000000 to One Crore', function() {
     number2text(10000000).should.equal('One Crore');
@@ -196,4 +197,19 @@ describe('Conversion Language Tests', function() {
 	it('French conversion is not available', function() {
 	    number2text(1,'french').should.equal('Support for language: french is not available. Available languages are: indian,english');
 	  });
+});
+
+describe('Extra large numbers', function() {
+	
+	it('Should convert extra large numbers', function() {
+	    number2text(1000000000).should.equal('One Hundred Crore');
+	    number2text(1000000000,'English').should.equal('One Billion');
+
+	    number2text(1000000000000).should.equal('One Lakh Crore');
+	    number2text(1000000000000,'English').should.equal('One Trillion');
+
+	    number2text(1000000000000000000).should.equal('Ten Thousand Crore Crore'); //High number discrepency in Indian type
+	    number2text(1000000000000000000,'English').should.equal('One Quintillion');
+	  });
+
 });
