@@ -1,11 +1,12 @@
 Number to Text
 ===
 [![Build Status](https://travis-ci.org/garora/number2text.svg?branch=master)](https://travis-ci.org/garora/number2text)   [![Coverage Status](https://coveralls.io/repos/garora/number2text/badge.svg)](https://coveralls.io/r/garora/number2text)
-> Provides the facility to convert number to text. Currently it supports:
+> Provides the facility to convert number to text. 
 
-* Numbers only (no currency support available) 
-* Indian style for number to text
-* English style for number to text
+* Default type is Indian for non-currency 
+* Default type is Indian Rupee for currency
+* Indian style for number to text (Indian Rupee for currency)
+* English style for number to text (US Dollar for currency)
 
 
 ## How to install?
@@ -61,6 +62,20 @@ Number to Text
   console.log('Retuns message: ', text); //Return message: Support for language: french is not available. Available languages are: indian,english
  ```
 
+```js
+       
+  var defaultCurrency = numberToText(100.10,'',true);
+
+  console.log('Converts 100.10 to ', defaultCurrency); //Converts 100.10 to One Hundred Rupee And Ten Paise Only
+```
+
+```js
+       
+  var defaultNonCurrency = numberToText(100.10);
+
+  console.log('Converts 100.10 to ', defaultNonCurrency); //Converts 100.10 to One Hundred Point Ten 
+```
+
 ## Executing tests
 
 ```shell
@@ -101,3 +116,4 @@ Currently ```number2text``` is in initial release. We're trying to make it more 
 * 0.1.11 Typos
 * 1.0.0 New feature
 * 1.0.1 Added large number support
+* 1.1.0 Added currency support
