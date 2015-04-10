@@ -1,7 +1,7 @@
 {
   "name": "number2text",
   "version": "1.1.0",
-  "description": "Provides the facility to convert number to text (currently supports only Indian style for number to text).",
+  "description": "Provides the facility to convert number to text (currently supports only Indian and English style for number to text including currency (Indian Rupee and US Dollar))",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha",
