@@ -6,7 +6,7 @@ var should = require('chai').should(),
   it('Converts 1 to One', function() {
     number2text(1).should.equal('One');
     number2text(1,'english').should.equal('One');
-  });
+    });
 
   it('Converts 2 to Two', function() {
     number2text(2).should.equal('Two');
@@ -111,9 +111,9 @@ describe('Negative Tests', function() {
     number2text(num,'english').should.equal('Invalid number.');
   });
 
- it('Test for decimal', function() {
+ xit('Test for decimal', function() {
     number2text('10.10').should.equal('Currently, currency/decimal support is unavailable.');
-    number2text('10.10','english').should.equal('Currently, currency/decimal support is unavailable.');
+    number2text('10.10','indian','true').should.equal('Currently, currency/decimal support is unavailable.');
   });
 
 it('Out of range - Lower', function() {
