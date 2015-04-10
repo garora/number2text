@@ -1,3 +1,6 @@
+## 1.1.0 / March 11, 2015
+  * Added currency support
+
 ## 1.0.1 / March 06, 2015
   * Added support for large number conversion
   
