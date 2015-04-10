@@ -1,6 +1,6 @@
 {
   "name": "number2text",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Provides the facility to convert number to text (currently supports only Indian style for number to text).",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,9 @@
     "type",
     "text",
     "Indian",
-    "English"
+    "English",
+    "Rupee",
+    "Dollar"
   ],
   "author": "Gaurav Kumar Arora <g_arora@hotmail.com> (http://gaurav-arora.com/)",
   "contributors": [
@@ -29,10 +31,9 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
+      "url": "https://github.com/garora/number2text/blob/master/LICENSE"
     }
   ],
-  "url": "https://github.com/garora/number2text/blob/master/LICENSE",
   "bugs": {
     "url": "https://github.com/garora/number2text/issues"
   },
