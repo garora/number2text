@@ -111,19 +111,9 @@ describe('Negative Tests', function() {
     number2text(num,'english').should.equal('Invalid number.');
   });
 
- xit('Test for decimal', function() {
-    number2text('10.10').should.equal('Currently, currency/decimal support is unavailable.');
-    number2text('10.10','indian','true').should.equal('Currently, currency/decimal support is unavailable.');
-  });
-
-it('Out of range - Lower', function() {
+ it('Out of range - Lower', function() {
     number2text(-1).should.equal('Please enter +ve number only.');
     number2text(-1,'english').should.equal('Please enter +ve number only.');
-  });
-
-xit('Out of range - Higher', function() {
-    number2text(1000000000).should.equal('Please enter number between 0 - 999999999.');
-    number2text(1000000000,'english').should.equal('Please enter number between 0 - 999999999.');
   });
 
 });
@@ -195,7 +185,7 @@ describe('Conversion Language Tests', function() {
 	  });
 
 	it('French conversion is not available', function() {
-	    number2text(1,'french').should.equal('Support for language: french is not available. Available languages are: indian,english');
+	    number2text(1,'french').should.equal('Support for type: french is not available. Available types are: indian,english');
 	  });
 });
 
@@ -217,4 +207,52 @@ describe('Extra large numbers', function() {
 	    number2text(10000000000000000000).should.equal('One Lakh Crore Crore'); //High number discrepency in Indian type
 	    number2text(10000000000000000000,'English').should.equal('Ten Quintillion');
 	  });
+});
+
+describe('Decimal Tests', function() {
+  
+ it('1010.10 should convert to One Thousand Ten Point Ten with default type', function() {
+    number2text('1010.10').should.equal('One Thousand Ten Point Ten');
+  });
+
+ it('1010.10 should convert to One Thousand Ten Point Ten with type english', function() {
+    number2text('1010.10','english').should.equal('One Thousand Ten Point Ten');
+  });
+
+ it('Should validate correct type', function() {
+    number2text('1010.10',true).should.equal('Please enter valid type.');
+  });
+
+ it('Should handle decimal', function() {
+    number2text('1010.10','indian').should.equal(number2text('1010.10'));
+  });
+
+ it('Should handle decimal using default type', function() {
+    number2text('1010.10','',true).should.equal(number2text('1010.10','indian',true));
+  });
+
+ it('Should validate types using decimal', function() {
+    number2text('1010.10','indian',true).should.not.equal(number2text('1010.10','english',true));
+  });
+
+});
+
+describe('Currency Tests', function() {
+  
+ it('1010.10 should convert to One Thousand And  Ten Rupee And Ten Paise only with default type', function() {
+    number2text('1010.10','',true).should.equal('One Thousand And  Ten Rupee And Ten Paise only');
+  });
+
+ it('Should handle currency support with default type', function() {
+    number2text('1010.10','',false).should.not.equal(number2text('1010.10','',true));
+  });
+
+ it('1010.10 should convert to One Thousand And  Ten Dollar And Ten Cent only with type english', function() {
+    number2text('1010.10','english',true).should.equal('One Thousand And  Ten Dollar And Ten Cent only');
+  });
+
+ it('Should handle currency support with default type', function() {
+    number2text('1010.10','english',false).should.not.equal(number2text('1010.10','english',true));
+  });
+
 });
