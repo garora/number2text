@@ -57,7 +57,7 @@ Number to Text
        
   //For types other than Indian, English
 
-  var text = numberToText(100,"Frensh");
+  var text = numberToText(100,"French");
   
   console.log('Retuns message: ', text); //Return message: Support for language: french is not available. Available languages are: indian,english
  ```
@@ -117,3 +117,4 @@ Currently ```number2text``` is in initial release. We're trying to make it more 
 * 1.0.0 New feature
 * 1.0.1 Added large number support
 * 1.1.0 Added currency support
+* 1.1.1 typos
