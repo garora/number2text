@@ -1,3 +1,6 @@
+# Looking for contributors
+Due to other stuffs, I'm unable to maintain the repository. There were plans to enhance the code with new langauge/conversions, if you have time and willing to help communities. You are the one who can contribute. Add your [plan](https://github.com/garora/number2text/issues) here and lets start it.
+
 Number to Text
 ===
 [![Build Status](https://travis-ci.org/garora/number2text.svg?branch=master)](https://travis-ci.org/garora/number2text)   [![Coverage Status](https://coveralls.io/repos/garora/number2text/badge.svg)](https://coveralls.io/r/garora/number2text)
