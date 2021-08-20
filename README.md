@@ -26,7 +26,7 @@ Number to Text
 
 ```js
      
-  var textDefault = numberToText(100); //it converts to default type i.e. Indian
+  var textDefault = numberToText(1000000); //it converts to default type i.e. Indian
 
   console.log('Converts 1000000 to ', textDefault); //Converts 1000000 to Ten Lakh
 ```
