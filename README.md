@@ -94,6 +94,10 @@ Just need to take care to maintain the existing coding style. Add unit tests for
   cd number2text
 ```
 
+### Contributors
+Many thanks to all the contributors who spent their time to write code. Their contribution is priceless, A small gratitude for their contributions:
+
+ 1. [Rishabh Desai](https://github.com/rishabdesai)
 
 # Starting with pre-release installation
 
